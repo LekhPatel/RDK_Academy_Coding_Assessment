@@ -26,14 +26,14 @@ def sortAndFindMedian(numbers):
 def sort(numbers):
     n = len(numbers) # storing the length for simplicity/
     
-    for i in range(n): # Implemented simple bubble sort
+    for i in range(n): # Outer loop that runs for the number of elements
 
         for j in range(0, n - i - 1): # iterates through elements and avoids the sorted bubbles in the end
 
             if numbers[j] > numbers[j + 1]: 
                 numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j] # Larger bubble moves towards the end of the list.
-    print(numbers)
+    print(f"sorted numbers: {numbers}")
 
 numbers = list(map(float, input("Enter numbers separated by spaces: ").split())) # reads inputs, splits by space, and maps the float values in the numbers lits
-median = sortAndFindMedian(numbers)
-print("Median:", median)
+median = sortAndFindMedian(numbers) # Calling the function to find the median
+print(f"Median: {median}")
