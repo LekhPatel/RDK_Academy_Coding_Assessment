@@ -1,0 +1,25 @@
+import json
+import requests
+from pathlib import Path
+
+CONFIG_PATH = Path("config.json")
+
+with open(CONFIG_PATH, "r") as f:
+    config = json.load(f)
+
+API_KEY = config.get("openweather_api_key")
+
+CITY = "Newark"
+URL = "https://api.openweathermap.org/data/2.5/weather"
+
+params = {
+    "q": CITY,
+    "appid": API_KEY,
+}
+
+response = requests.get(URL, params=params)
+response.raise_for_status()
+
+data = response.json()
+
+print(data)

@@ -1,5 +1,8 @@
 # RDK_Academy_Coding_Assessment
 
+The project uses the requests library to make the API requests easier. To install the dependencies, pip install requests
+
+
 The API key is stored in config.json and has been ignored from pushing.
 
 config.json format
