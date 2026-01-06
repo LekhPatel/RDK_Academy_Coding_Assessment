@@ -15,3 +15,16 @@ while True:
 
         favourites.append(city)
         print(f"{city} added to favourites\n")
+
+    elif choice == "3":
+
+            print("\nFavourite Cities:")
+            for i, city in enumerate(favourites, start=1):
+                print(f"{i}. {city}")
+
+            selection = input("Select city number to remove: ").strip()
+
+            index = int(selection) - 1
+
+            removed_city = favourites.pop(index)
+            print(f"{removed_city} removed from favourites\n")
