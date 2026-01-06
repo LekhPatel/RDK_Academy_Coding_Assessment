@@ -18,7 +18,7 @@ The test code also shows a distributed approach that should be taken to make mai
 The test codes have been combined into main.py to avoid references due to time limitations
 ## Pseudocode to Code
 
-
+Used a bubble sort in the sorting function
 
 ## Challenge Description
 
