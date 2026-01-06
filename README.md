@@ -1,7 +1,8 @@
 # RDK_Academy_Coding_Assessment
 
-The project uses the requests library to make the API requests easier. To install the dependencies, pip install requests
+## OpenWeather Challenge
 
+The project uses the "requests" library to make the API requests easier. To install the dependencies, pip install requests
 
 The API key is stored in config.json and has been ignored from pushing.
 
@@ -9,6 +10,17 @@ config.json format
 {
   "openweather_api_key": "<API key>"
 }
+
+The code to test the different features are fragmented and distributed to test functionality.
+
+The test code also shows a distributed approach that should be taken to make maintenance easier
+
+The test codes have been combined into main.py to avoid references due to time limitations
+## Pseudocode to Code
+
+
+
+## Challenge Description
 
 Objective
 Create a command-line application that interacts with the OpenWeather API to manage weather
