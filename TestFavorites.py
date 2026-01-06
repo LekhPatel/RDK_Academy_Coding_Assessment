@@ -28,3 +28,8 @@ while True:
 
             removed_city = favourites.pop(index)
             print(f"{removed_city} removed from favourites\n")
+
+    elif choice == "4":
+            for city in favourites:
+                data = "getting weather for " + city
+                print(data)
