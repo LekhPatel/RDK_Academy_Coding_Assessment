@@ -1,5 +1,11 @@
 # RDK_Academy_Coding_Assessment
 
+The API key is stored in config.json and has been ignored from pushing.
+
+config.json format
+{
+  "openweather_api_key": "<API key>"
+}
 
 Objective
 Create a command-line application that interacts with the OpenWeather API to manage weather
